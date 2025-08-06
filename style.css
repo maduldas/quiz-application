@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    background-color: #1e2a38;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    color: #00e6e6;
+    text-shadow: 0 2px 5px #000;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #ccc;
+  }
+  
+  /* Timer */
+  #timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd700;
+    background-color: #273849;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  /* Question */
+  #question {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Answer Buttons */
+  .answer-btn {
+    background-color: #ffffff;
+    color: #1e2a38;
+    padding: 12px 20px;
+    margin: 10px auto;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s ease;
+  }
+  
+  .answer-btn:hover {
+    background-color: #00e6e6;
+    color: #000;
+    transform: scale(1.02);
+  }
+  
+  .answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  /* Feedback Text */
+  #feedback {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 25px;
+    margin-top: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #00e6e6;
+    color: #000;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0ff;
+    color: #000;
+  }
+  
+  #next-btn {
+    display: none;
+  }
+  
+  /* Score Display */
+  #score-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  #final-score {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #00ff99;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .answer-btn {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
